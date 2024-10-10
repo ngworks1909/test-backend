@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": ".",              // Output compiled JS files in the root directory
+    "rootDir": ".",             // The root directory where your index.ts is located
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "**/*.ts"                   // Include all TypeScript files in the project
+  ],
+  "exclude": [
+    "node_modules",             // Exclude node_modules
+    "dist"                      // (If you have a dist folder) Exclude it to avoid circular dependencies
+  ]
+}
